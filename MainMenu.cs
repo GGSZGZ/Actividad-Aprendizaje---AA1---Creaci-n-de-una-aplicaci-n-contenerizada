@@ -135,11 +135,11 @@ private static void ShowThirdMenu()
 
     private static void CoffeeMenu(int secondOption, string key)
     {
-        
+        Coffee userData= new Coffee();
         switch (secondOption)
         {
             case 1:
-                AddCoffee();
+                userData.AddCoffee();
                 break;
             case 2:
                 ShowThirdMenu();

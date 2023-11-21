@@ -2,33 +2,41 @@ namespace Class;
 
 public class UserData{
 
-    public string? NAME{get;set;}
+    public string? name{get;set;}
 
-    public string? SURNAME{get;set;}
+    public string? surname{get;set;}
 
-    public int? AGE{get;set;}
+    public int? age{get;set;}
     
     private List<Booking> bookings=new List<Booking>();
 
-    public DateTime DATE {get;set;}
+    public DateTime date {get;set;}
 
-    public string? PASSWORD{get;set;}
+    public string? password{get;set;}
 
     public static int account_Seed = 1000;
 
     //CONSTRUCTOR
-    public UserData(string name = "GUEST", string surname = "GUEST", int age = 0, DateTime date, string pass){
-    DATE = date == default ? DateTime.Now.Date : date;
-    NAME = name;
-    SURNAME = surname;
-    AGE = age;
-    PASSWORD = pass;
-    if (name == "GUEST" && surname == "GUEST")
+    public UserData(string password,string name = "GUEST", string surname = "GUEST", int age = 0){
+    date = DateTime.Now.Date;
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+    this.password = password;
+
+    if (isLogged()==false)
     {   
-        PASSWORD = account_Seed.ToString();
+        this.password = account_Seed.ToString();
         account_Seed += 1;
     }
 }
 
-
+public bool isLogged(){
+    if (name == "GUEST" && surname == "GUEST")
+    {   
+        return false;
+    }else{
+        return true;
+    }
+}
 }

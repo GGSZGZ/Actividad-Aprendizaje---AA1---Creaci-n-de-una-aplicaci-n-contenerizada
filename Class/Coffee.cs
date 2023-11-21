@@ -1,17 +1,17 @@
 namespace Class;
 
 public class Coffee{
-    public string? NAME{get;set;}
+    public string? name{get;set;}
 
-    public string? DESCRIPTION{get;set;}
+    public string? description{get;set;}
 
-    public string? ORIGIN{get;set;}
+    public string? origin{get;set;}
 
-    public decimal? PRICE{get;set;}
+    public decimal? price{get;set;}
 
-    public bool? SUGAR{get;set;}
+    public bool? sugar{get;set;}
 
-    public bool? MILK{get;set;}
+    public bool? milk{get;set;}
 
     public static List<Coffee> coffeeList = new List<Coffee>();
 
@@ -20,25 +20,25 @@ public class Coffee{
     }
 
     public Coffee(string name,string description,string origin,decimal price,bool sugar=false,bool milk=false){
-        NAME=name;
-        DESCRIPTION=description;
-        ORIGIN=origin;
-        PRICE=price;
-        SUGAR=sugar;
-        MILK=milk;
+        this.name=name;
+        this.description=description;
+        this.origin=origin;
+        this.price=price;
+        this.sugar=sugar;
+        this.milk=milk;
     }
 
-    private void AddCoffee(){
+    public void AddCoffee(){
         for (int i = 1; i <= 5; i++)
             {
                 Coffee coffee = FillCoffee(i);
                 Console.WriteLine($"Coffee {i}:");
-                Console.WriteLine($"Name: {coffee.NAME}");
-                Console.WriteLine($"Description: {coffee.DESCRIPTION}");
-                Console.WriteLine($"Origin: {coffee.ORIGIN}");
-                Console.WriteLine($"Price: {coffee.PRICE}");
-                Console.WriteLine($"Sugar: {coffee.SUGAR}");
-                Console.WriteLine($"Milk: {coffee.MILK}");
+                Console.WriteLine($"Name: {coffee.name}");
+                Console.WriteLine($"Description: {coffee.description}");
+                Console.WriteLine($"Origin: {coffee.origin}");
+                Console.WriteLine($"Price: {coffee.price}");
+                Console.WriteLine($"Sugar: {coffee.sugar}");
+                Console.WriteLine($"Milk: {coffee.milk}");
                 Console.WriteLine();
                 coffeeList.Add(coffee);
             }
