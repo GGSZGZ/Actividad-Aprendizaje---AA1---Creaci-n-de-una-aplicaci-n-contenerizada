@@ -1,5 +1,6 @@
 
 using System;
+using Class;
 
 public class MainMenu
 {
@@ -134,11 +135,11 @@ private static void ShowThirdMenu()
 
     private static void CoffeeMenu(int secondOption, string key)
     {
-        
+        Coffee userData= new Coffee();
         switch (secondOption)
         {
             case 1:
-                
+                userData.AddCoffee();
                 break;
             case 2:
                 ShowThirdMenu();
