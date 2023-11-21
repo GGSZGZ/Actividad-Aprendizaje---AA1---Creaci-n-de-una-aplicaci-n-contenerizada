@@ -5,9 +5,12 @@ public class Booking{
 
     public DateTime DATEBOOKED {get;set;}
 
-    private List<Coffee>coffees=new List<Coffee>();
+    private List<Coffee> bookingCoffees=new List<Coffee>();
+
     public decimal? DESKNUMBER {get;set;}
+
     public int? NUMBERPEOPLE {get;set;}
+
     public bool? BOOKED {get;set;}
 
     public string? NOTES {get;set;}

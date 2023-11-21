@@ -1,5 +1,6 @@
 
 using System;
+using Class;
 
 public class MainMenu
 {
@@ -138,7 +139,7 @@ private static void ShowThirdMenu()
         switch (secondOption)
         {
             case 1:
-                
+                AddCoffee();
                 break;
             case 2:
                 ShowThirdMenu();
