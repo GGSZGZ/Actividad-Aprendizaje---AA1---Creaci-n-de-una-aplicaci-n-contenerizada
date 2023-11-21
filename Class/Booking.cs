@@ -3,14 +3,17 @@ namespace Class;
 public class Booking{
 
 
-    public DateTime DATEBOOKED {get;set;}
+    public DateTime datebooked {get;set;}
 
-    private List<Coffee>coffees=new List<Coffee>();
-    public decimal? DESKNUMBER {get;set;}
-    public int? NUMBERPEOPLE {get;set;}
-    public bool? BOOKED {get;set;}
+    private List<Coffee> bookingCoffees=new List<Coffee>();
 
-    public string? NOTES {get;set;}
+    public decimal? desknumber {get;set;}
+
+    public int? numberpeople {get;set;}
+
+    public bool? booked {get;set;}
+
+    public string? notes {get;set;}
 
 
     public Booking(){
@@ -18,11 +21,10 @@ public class Booking{
     }
 
     public Booking(DateTime datebooked,decimal desknumber,int numberpeople,bool booked=false,string notes=""){
-         DATEBOOKED = datebooked == default ? DateTime.Now.Date : datebooked;
-         DESKNUMBER=desknumber;
-         NUMBERPEOPLE=numberpeople;
-         BOOKED=booked;
-         NOTES=notes;
+         this.datebooked = datebooked == default ? DateTime.Now.Date : datebooked;
+         this.desknumber=desknumber;
+         this.numberpeople=numberpeople;
+         this.booked=booked;
+         this.notes=notes;
     }
-
 }
