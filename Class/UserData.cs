@@ -9,6 +9,7 @@ public class UserData{
     public int? age{get;set;}
     
     private List<Booking> bookings=new List<Booking>();
+    private List<CoffeeModel> userCoffees=new List<CoffeeModel>();
 
     public DateTime date {get;set;}
 
@@ -39,4 +40,9 @@ public bool isLogged(){
         return true;
     }
 }
+
+ public override string ToString()
+    {
+        return $"Name: {name ?? "N/A"}, Surname: {surname ?? "N/A"}, Age: {age?.ToString() ?? "N/A"}, Password: {password ?? "N/A"}";
+    }
 }
