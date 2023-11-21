@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Black",
+    "description": "Single Espresso",
+    "origin": "Brazil",
+    "price": 1.1,
+    "sugar": false,
+    "milk": false
+  },
+  {
+    "name": "Latte",
+    "description": "Coffee with Milk",
+    "origin": "Blend of coffee beans from Latin America",
+    "price": 2.5,
+    "sugar": false,
+    "milk": true
+  },
+  {
+    "name": "Cappuccino",
+    "description": "Espresso with Milk and Milk Foam",
+    "origin": "Italy",
+    "price": 3,
+    "sugar": false,
+    "milk": true
+  },
+  {
+    "name": "Americano",
+    "description": "Coffee Diluted with Hot Water",
+    "origin": "Blend of coffee beans from Central and South America",
+    "price": 2.2,
+    "sugar": false,
+    "milk": false
+  },
+  {
+    "name": "Espresso",
+    "description": "Concentrated and Strong Coffee",
+    "origin": "Italy",
+    "price": 2.5,
+    "sugar": false,
+    "milk": false
+  },
+  {
+    "name": "Affogato",
+    "description": "A little espresso with a scoop of ice cream",
+    "origin": "Italia",
+    "price": 4.5,
+    "sugar": true,
+    "milk": true
+  },
+  {
+    "name": "Macchiato",
+    "description": "An espresso shot with foam",
+    "origin": "Italia",
+    "price": 1.75,
+    "sugar": false,
+    "milk": true
+  },
+  {
+    "name": "Mocha",
+    "description": "A little espresso with foamed milk",
+    "origin": "Yemen",
+    "price": 3.5,
+    "sugar": true,
+    "milk": true
+  },
+  {
+    "name": "Irish",
+    "description": "Coffee with whiskey, sugar and cream",
+    "origin": "Ireland",
+    "price": 3.25,
+    "sugar": true,
+    "milk": true
+  },
+  {
+    "name": "Galão",
+    "description": "An espresso with foamed milk",
+    "origin": "Portugal",
+    "price": 2.4,
+    "sugar": true,
+    "milk": true
+  }
+]

@@ -1,14 +1,20 @@
 
-using System;
 using Class;
 
 public class MainMenu
 {
     
     private static string key = "";
+   
+   
+    
 
     public static void BeginMenu()
     {
+        CoffeMethod coffeMethod=new CoffeMethod();
+        Credentials credentials=new Credentials();
+        coffeMethod.readJsonCoffee();
+         
         var option = 0;
         var secondOption = 0;
 
@@ -20,7 +26,7 @@ public class MainMenu
             switch (option)
             {
                 case 1:
-                    
+                    credentials.CreateAccount();
                     break;
                 case 2:
                     
@@ -72,6 +78,15 @@ private static void ShowThirdMenu()
         Console.WriteLine("2:Cancelar mesa");
         Console.WriteLine("3:Salir");
         Console.Write("Elige una opción: ");
+}
+
+private static void showCoffeeMenu(){
+
+  foreach (var item in CoffeMethod.coffeeList)
+        {
+            Console.WriteLine(item.ToString());
+        } 
+
 }
 
 
@@ -133,13 +148,41 @@ private static void ShowThirdMenu()
         return option;
     }
 
+    private static int ReadCoffeeOption()
+{
+    int option;
+    do
+    {
+        try
+        {
+            option = int.Parse(Console.ReadLine()!);
+            if (option <= 0 || option > 10)
+            {
+                Console.WriteLine("Debes introducir un valor entre 1 y 10");
+            }
+            else
+            {
+                break;
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Debes introducir un valor numérico");
+        }
+    } while (true);
+
+    return option;
+}
+
     private static void CoffeeMenu(int secondOption, string key)
     {
-        Coffee userData= new Coffee();
+        
         switch (secondOption)
         {
             case 1:
-                userData.AddCoffee();
+                showCoffeeMenu();
+                var opctionCoffee=ReadCoffeeOption();
+                
                 break;
             case 2:
                 ShowThirdMenu();

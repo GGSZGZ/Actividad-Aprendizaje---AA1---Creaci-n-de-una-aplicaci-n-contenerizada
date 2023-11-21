@@ -5,7 +5,7 @@ public class Booking{
 
     public DateTime datebooked {get;set;}
 
-    private List<Coffee> bookingCoffees=new List<Coffee>();
+    private List<CoffeeModel> bookingCoffees=new List<CoffeeModel>();
 
     public decimal? desknumber {get;set;}
 
