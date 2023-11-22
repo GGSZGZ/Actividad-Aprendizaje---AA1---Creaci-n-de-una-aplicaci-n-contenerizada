@@ -3,9 +3,6 @@ using Class;
 public class Credentials{
      public void CreateAccount()
     {
-        
-       
-
         Console.WriteLine("Nombre del usuario");
         string name=Console.ReadLine()!;
         Console.WriteLine("Apellidos");
@@ -30,9 +27,12 @@ public class Credentials{
         Console.WriteLine("Dime una contraseña para tu cuenta");
         string passw=Console.ReadLine()!;
     do{
-            if (DictionaryUsers.dictionaryAccounts.ContainsKey(passw))
+            if (DictionaryUsers.dictionaryAccounts.ContainsKey(passw) || passw == UserData.account_Seed.ToString())
             {
                 Console.WriteLine("Dime una contraseña para tu cuenta que no exista ya");
+                passw=Console.ReadLine()!;
+            }else if(EsNumero(passw)){
+                Console.WriteLine("La contraseña tiene que contener caracteres númericos y letras");
                 passw=Console.ReadLine()!;
             }
             else
@@ -43,5 +43,10 @@ public class Credentials{
                 break;
             }
         } while (true);
+    }
+
+    static bool EsNumero(string input){
+        double resultado;
+        return double.TryParse(input, out resultado);
     }
 }
