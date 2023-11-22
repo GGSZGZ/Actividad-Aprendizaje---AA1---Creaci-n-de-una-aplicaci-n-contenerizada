@@ -1,7 +1,9 @@
 
 namespace Services;
 using System.Text.RegularExpressions;
-using Class;
+using Data;
+using Models;
+using System.Text.Json;
 
 public class UserService{
      public string CreateUser()
@@ -72,11 +74,12 @@ public class UserService{
         return double.TryParse(input, out resultado);
     }
 
-public bool ValidarEmail(string email){
-    return email != null && Regex.IsMatch(email, "^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@(([a-zA-Z]+[\\w-]+\\.){1,2}[a-zA-Z]{2,4})$");
-}
-    public bool Login(){
+    public bool ValidarEmail(string email){
+        return email != null && Regex.IsMatch(email, "^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@(([a-zA-Z]+[\\w-]+\\.){1,2}[a-zA-Z]{2,4})$");
+    }
 
+    public bool Login(){
+        
         Console.WriteLine("Dime tu correo");
         string email=Console.ReadLine()!;
 
@@ -94,4 +97,63 @@ public bool ValidarEmail(string email){
             return false;
         }
     }
+
+    
+
+
+    public static void WriteJsonUser(Dictionary<string, User> userDictionary){
+        string filePath = @".\users.json";
+        var jsonData = new List<Dictionary<string, object>>();
+
+        foreach (var userEntry in userDictionary)
+        {
+            var user = userEntry.Value;
+
+            var bookingsArray = user.bookings.Select(booking =>
+                new
+                {
+                    DateBooked = booking.datebooked,
+                    UserLogged = booking.userLogged,
+                    DeskNumber = booking.desknumber,
+                    NumberPeople = booking.numberpeople,
+                    Booked = booking.booked,
+                    Notes = booking.notes
+                }).ToArray();
+
+            var userCoffeesArray = user.userCoffees.Select(coffee =>
+                new
+                {
+                    Name = coffee.name,
+                    Description = coffee.description,
+                    Origin = coffee.origin,
+                    Price = coffee.price,
+                    Sugar = coffee.sugar,
+                    Milk = coffee.milk
+                }).ToArray();
+
+            var userData = new Dictionary<string, object>
+            {
+                {"Name", user.name ?? ""},
+                {"Surname", user.surname ?? ""},
+                {"Age", user.age ?? 0},
+                {"Bookings", bookingsArray},
+                {"UserCoffees", userCoffeesArray},
+                {"Date", user.date},
+                {"Password", user.password ?? ""},
+                {"Email", user.email ?? ""}
+            };
+            jsonData.Add(userData);
+        }
+
+        string jsonString = JsonSerializer.Serialize(jsonData, new JsonSerializerOptions
+        {
+            WriteIndented = true
+        });
+
+        File.WriteAllText(filePath, jsonString);
+    }
+
+
+
+
 }

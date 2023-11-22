@@ -1,5 +1,5 @@
 
-using Class;
+using Models;
 using Services;
 
 public class MainMenu
@@ -34,6 +34,7 @@ public class MainMenu
                    if(success==true){
                     do
                     {
+                        UserService.WriteJsonUser(DictionaryUsers.dictionaryAccounts);
                         ShowSecondMenu();
                         secondOption = ReadSecondOption();
                         CoffeeMenu(secondOption, key);

@@ -1,4 +1,4 @@
-namespace Class;
+namespace Data;
 using Models;
 
 public class User{
@@ -9,13 +9,14 @@ public class User{
 
     public int? age{get;set;}
     
-    private List<Booking> bookings=new List<Booking>();
+    public List<Booking> bookings=new List<Booking>();
     
-    private List<Coffee> userCoffees=new List<Coffee>();
+    public List<Coffee> userCoffees=new List<Coffee>();
 
     public DateTime date {get;set;}
 
     public string? password{get;set;}
+    
     public string? email{get;set;}
 
     public static string account_Seed = "1000";

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj": {}
+    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\ActividadAprendizajeAA1-1ºEv.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj": {
+    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\ActividadAprendizajeAA1-1ºEv.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj",
+        "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\ActividadAprendizajeAA1-1ºEv.csproj",
         "projectName": "ActividadAprendizajeAA1-1ºEv",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\obj\\",
+        "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\ActividadAprendizajeAA1-1ºEv.csproj",
+        "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
+        "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
