@@ -101,11 +101,11 @@ public class UserService{
     
 
 
-    public static void WriteJsonUser(Dictionary<string, User> userDictionary){
+    public static void WriteJsonUser(){
         string filePath = @".\users.json";
         var jsonData = new List<Dictionary<string, object>>();
 
-        foreach (var userEntry in userDictionary)
+        foreach (var userEntry in DictionaryUsers.dictionaryAccounts)
         {
             var user = userEntry.Value;
 

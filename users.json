@@ -1,12 +1,1 @@
-[
-  {
-    "Name": "Javier",
-    "Surname": "Ramirez",
-    "Age": 40,
-    "Bookings": [],
-    "UserCoffees": [],
-    "Date": "2023-11-22T00:00:00+01:00",
-    "Password": "pass1",
-    "Email": "javier@gmail.com"
-  }
-]
+[]

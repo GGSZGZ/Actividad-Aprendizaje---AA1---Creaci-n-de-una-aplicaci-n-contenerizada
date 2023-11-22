@@ -34,7 +34,7 @@ public class MainMenu
                    if(success==true){
                     do
                     {
-                        UserService.WriteJsonUser(DictionaryUsers.dictionaryAccounts);
+                        UserService.WriteJsonUser();
                         ShowSecondMenu();
                         secondOption = ReadSecondOption();
                         CoffeeMenu(secondOption, key);
@@ -45,6 +45,7 @@ public class MainMenu
                     case 3:
                     Console.WriteLine("Sesión iniciada como invitado");
                     credentials.CreateGuest();
+                    UserService.WriteJsonUser();
                     ShowSecondMenu();
                     secondOption = ReadSecondOption();
                     CoffeeMenu(secondOption, key);
@@ -94,6 +95,7 @@ private static void showCoffeeMenu(){
 private static void CheckGuest(){
     if(DictionaryUsers.dictionaryAccounts.ContainsKey("guest@gmail.com")){
             DictionaryUsers.dictionaryAccounts.Remove("guest@gmail.com");
+            UserService.WriteJsonUser();
         }
 }
 
