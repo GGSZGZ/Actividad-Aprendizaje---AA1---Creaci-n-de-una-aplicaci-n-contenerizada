@@ -1,5 +1,6 @@
 
 using Class;
+using Services;
 
 public class MainMenu
 {
@@ -9,10 +10,9 @@ public class MainMenu
    
     
 
-    public static void BeginMenu()
-    {
-        CoffeMethod coffeMethod=new CoffeMethod();
-        Credentials credentials=new Credentials();
+    public static void BeginMenu(){
+        CoffeeService coffeMethod=new CoffeeService();
+        UserService credentials=new UserService();
         coffeMethod.readJsonCoffee();
          
         var option = 0;
@@ -22,35 +22,36 @@ public class MainMenu
         {
             ShowMenu();
             option = ReadOption();
-
+           
             switch (option)
             {
                 case 1:
-                    credentials.CreateAccount();
+                    key=credentials.CreateUser();
                     break;
                 case 2:
-                    
 
-                    if (key == null)
-                    {
-                        break;
-                    }
-                    
+                   bool success= credentials.Login();
+                   if(success==true){
                     do
                     {
                         ShowSecondMenu();
                         secondOption = ReadSecondOption();
                         CoffeeMenu(secondOption, key);
                     } while (secondOption != 3);
+                   }
                     break;
 
                     case 3:
-
-
+                    Console.WriteLine("Sesión iniciada como invitado");
+                    credentials.CreateGuest();
+                    ShowSecondMenu();
+                    secondOption = ReadSecondOption();
+                    CoffeeMenu(secondOption, key);
 
                     break;
             }
         } while (option != 4);
+        
     }
 
     private static void ShowMenu()
@@ -82,13 +83,18 @@ private static void ShowThirdMenu()
 
 private static void showCoffeeMenu(){
 
-  foreach (var item in CoffeMethod.coffeeList)
+  foreach (var item in CoffeeService.coffeeList)
         {
             Console.WriteLine(item.ToString());
         } 
 
 }
 
+private static void CheckGuest(){
+    if(DictionaryUsers.dictionaryAccounts.ContainsKey("guest@gmail.com")){
+            DictionaryUsers.dictionaryAccounts.Remove("guest@gmail.com");
+        }
+}
 
     
 
@@ -190,7 +196,7 @@ private static void showCoffeeMenu(){
                 Console.WriteLine("has elegido " + option);
                 break;
             case 3:
-                
+                CheckGuest();
                 break;
         }
     }

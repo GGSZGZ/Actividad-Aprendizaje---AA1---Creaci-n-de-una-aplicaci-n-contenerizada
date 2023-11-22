@@ -1,6 +1,6 @@
-namespace Class;
+namespace Models;
 
-public class CoffeeModel{
+public class Coffee{
     public string? name{get;set;}
 
     public string? description{get;set;}
@@ -15,11 +15,11 @@ public class CoffeeModel{
 
     
 
-    public CoffeeModel(){
+    public Coffee(){
 
     }
 
-    public CoffeeModel(string name,string description,string origin,decimal price,bool sugar=false,bool milk=false){
+    public Coffee(string name,string description,string origin,decimal price,bool sugar=false,bool milk=false){
         this.name=name;
         this.description=description;
         this.origin=origin;

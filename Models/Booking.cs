@@ -1,4 +1,4 @@
-namespace Class;
+namespace Models;
 
 public class Booking{
 
@@ -20,7 +20,7 @@ public class Booking{
 
     }
 
-    public Booking(DateTime datebooked, bool userLogged = false, decimal desknumber,int numberpeople,bool booked=false,string notes=""){
+    public Booking(DateTime datebooked, bool userLogged = false, decimal desknumber=0,int numberpeople=0,bool booked=false,string notes=""){
          this.datebooked = datebooked == default ? DateTime.Now.Date : datebooked;
          this.userLogged = userLogged;
          this.desknumber=desknumber;
