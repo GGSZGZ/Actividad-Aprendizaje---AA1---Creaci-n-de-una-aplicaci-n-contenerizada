@@ -9,6 +9,7 @@ public class UserData{
     public int? age{get;set;}
     
     private List<Booking> bookings=new List<Booking>();
+    
     private List<CoffeeModel> userCoffees=new List<CoffeeModel>();
 
     public DateTime date {get;set;}

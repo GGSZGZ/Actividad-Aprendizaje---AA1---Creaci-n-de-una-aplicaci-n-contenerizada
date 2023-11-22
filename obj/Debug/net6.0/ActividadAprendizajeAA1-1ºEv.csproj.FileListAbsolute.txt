@@ -36,3 +36,10 @@ C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\Clase
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeramaIvan\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeramaIvan\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.genruntimeconfig.cache
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeramaIvan\obj\Debug\net6.0\ref\ActividadAprendizajeAA1-1ºEv.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.exe
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.deps.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.runtimeconfig.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.genruntimeconfig.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\obj\Debug\net6.0\ref\ActividadAprendizajeAA1-1ºEv.dll

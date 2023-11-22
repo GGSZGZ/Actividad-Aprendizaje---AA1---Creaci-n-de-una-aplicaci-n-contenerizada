@@ -5,7 +5,7 @@ public class Booking{
 
     public DateTime datebooked {get;set;}
 
-    private List<CoffeeModel> bookingCoffees=new List<CoffeeModel>();
+    public bool? userLogged {get; set;}
 
     public decimal? desknumber {get;set;}
 
@@ -20,8 +20,9 @@ public class Booking{
 
     }
 
-    public Booking(DateTime datebooked,decimal desknumber,int numberpeople,bool booked=false,string notes=""){
+    public Booking(DateTime datebooked, bool userLogged = false, decimal desknumber,int numberpeople,bool booked=false,string notes=""){
          this.datebooked = datebooked == default ? DateTime.Now.Date : datebooked;
+         this.userLogged = userLogged;
          this.desknumber=desknumber;
          this.numberpeople=numberpeople;
          this.booked=booked;
