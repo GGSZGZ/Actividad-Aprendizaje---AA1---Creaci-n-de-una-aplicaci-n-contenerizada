@@ -23,4 +23,20 @@ public class CoffeeService{
         coffeeList[i].name = (i + 1).ToString() + ": " + coffeeList[i].name;
     }   
     }
+
+    public static void AddCoffeeUser(int optionCoffe,string key){
+
+        DictionaryUsers.dictionaryAccounts[key].userCoffees.Add(coffeeList[optionCoffe-1]);
+        UserService.WriteJsonUser();
+        foreach (var item in coffeeList)
+        {
+            int numeroAleatorio = new Random().Next(1, 101);
+            if(item.Equals(coffeeList[optionCoffe-1])){
+                Console.WriteLine("Has elegido el siguiente café: " + item.ToString());
+                Console.WriteLine("Pase por caja con el siguiente número " + numeroAleatorio + " para pagar.");
+            }
+        }
+
+
+    }
 }
