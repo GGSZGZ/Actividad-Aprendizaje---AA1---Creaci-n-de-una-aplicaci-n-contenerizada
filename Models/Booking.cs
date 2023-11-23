@@ -28,4 +28,9 @@ public class Booking{
          this.booked=booked;
          this.notes=notes;
     }
+
+    public override string ToString()
+        {
+            return $"Desk Number: {desknumber}, Number of People: {numberpeople}";
+        }
 }

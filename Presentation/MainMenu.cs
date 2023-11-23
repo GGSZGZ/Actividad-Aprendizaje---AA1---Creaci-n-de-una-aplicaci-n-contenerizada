@@ -49,6 +49,7 @@ public class MainMenu
                     UserService.WriteJsonUser();
                     ShowSecondMenu();
                     secondOption = ReadSecondOption();
+                    key="guest@gmail.com";
                     CoffeeMenu(secondOption, key);
 
                     break;
@@ -159,7 +160,7 @@ private static void CheckGuest(){
         return option;
     }
 
-    private static int ReadCoffeeOption()
+    private static int ReadOptionCB()
 {
     int option;
     do
@@ -191,22 +192,38 @@ private static void CheckGuest(){
         switch (secondOption)
         {
             case 1:
+
                 showCoffeeMenu();
-                var opctionCoffee=ReadCoffeeOption();
+                int optionCoffee=ReadOptionCB();
                 
                 break;
             case 2:
+            var option=0;
+            do{
                 ShowThirdMenu();
-            var option=ReadOption();
+                option=ReadOption();
                 switch (option){
                     case 1:
+                        BookingService.ShowBookedJson();
+                        int optionBooked=ReadOptionCB(); 
+                    if(BookingService.bookingList[optionBooked-1].booked==true){
+                            Console.WriteLine("Lo sentimos esta mesa no esta disponible");
+                            break;
+                        }else{
+                
+            
+                        Booking booked=BookingService.SelectingBooked(optionBooked);
+                        DictionaryUsers.dictionaryAccounts[key].bookings.Add(booked);
+                        UserService.WriteJsonUser();
+                    }
                     break;
                     case 2:
                     break;
                     case 3:
-                    BookingService.ShowBookedJson();   
+                    BookingService.ShowBookedJson();
                     break;
                 }
+            }while(option!=4);
                 break;
             case 3:
                 CheckGuest();
