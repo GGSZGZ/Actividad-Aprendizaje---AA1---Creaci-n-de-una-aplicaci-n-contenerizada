@@ -21,6 +21,7 @@ public class MainMenu
 
         do
         {
+            BookingService.ShowBookedJson(false);
             ShowMenu();
             option = ReadOption();
            
@@ -81,7 +82,7 @@ private static void ShowThirdMenu()
     
         Console.WriteLine("1:Reservar mesa");
         Console.WriteLine("2:Cancelar mesa");
-        Console.WriteLine("3:Mostrar mesas disponibles");
+        Console.WriteLine("3:Mostrar mis reservas");
         Console.WriteLine("4:Salir");
         Console.Write("Elige una opción: ");
 }
@@ -204,24 +205,34 @@ private static void CheckGuest(){
                 option=ReadOption();
                 switch (option){
                     case 1:
-                        BookingService.ShowBookedJson();
+                        BookingService.ShowBookedJson(true);
                         int optionBooked=ReadOptionCB(); 
                     if(BookingService.bookingList[optionBooked-1].booked==true){
                             Console.WriteLine("Lo sentimos esta mesa no esta disponible");
                             break;
                         }else{
-                
-            
                         Booking booked=BookingService.SelectingBooked(optionBooked);
                         DictionaryUsers.dictionaryAccounts[key].bookings.Add(booked);
                         UserService.WriteJsonUser();
+                        
                     }
                     break;
                     case 2:
+                    //cancelar reserva
+                   
+                    BookingService.CancelBooking(key);
+                    UserService.WriteJsonUser();
+                    
+
+                    
+                    
                     break;
                     case 3:
-                    BookingService.ShowBookedJson();
+                    //ver reservas
+                    BookingService.ShowPersonalBookings(key);
                     break;
+                    
+                    
                 }
             }while(option!=4);
                 break;
