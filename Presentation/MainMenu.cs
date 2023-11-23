@@ -13,6 +13,7 @@ public class MainMenu
     public static void BeginMenu(){
         CoffeeService coffeMethod=new CoffeeService();
         UserService credentials=new UserService();
+        
         coffeMethod.readJsonCoffee();
          
         var option = 0;
@@ -79,7 +80,8 @@ private static void ShowThirdMenu()
     
         Console.WriteLine("1:Reservar mesa");
         Console.WriteLine("2:Cancelar mesa");
-        Console.WriteLine("3:Salir");
+        Console.WriteLine("3:Mostrar mesas disponibles");
+        Console.WriteLine("4:Salir");
         Console.Write("Elige una opción: ");
 }
 
@@ -185,7 +187,7 @@ private static void CheckGuest(){
 
     private static void CoffeeMenu(int secondOption, string key)
     {
-        
+        BookingService bookingService= new BookingService();
         switch (secondOption)
         {
             case 1:
@@ -196,7 +198,15 @@ private static void CheckGuest(){
             case 2:
                 ShowThirdMenu();
             var option=ReadOption();
-                Console.WriteLine("has elegido " + option);
+                switch (option){
+                    case 1:
+                    break;
+                    case 2:
+                    break;
+                    case 3:
+                    BookingService.ShowBookedJson();   
+                    break;
+                }
                 break;
             case 3:
                 CheckGuest();

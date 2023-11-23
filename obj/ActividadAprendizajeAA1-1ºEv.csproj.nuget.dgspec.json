@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj": {}
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\TrabajoApredizajeAlex\\ActividadAprendizajeAA1-1ºEv.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj": {
+    "C:\\Users\\Usuario\\OneDrive\\Escritorio\\TrabajoApredizajeAlex\\ActividadAprendizajeAA1-1ºEv.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\TrabajoApredizajeAlex\\ActividadAprendizajeAA1-1ºEv.csproj",
         "projectName": "ActividadAprendizajeAA1-1ºEv",
-        "projectPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj",
-        "packagesPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\TrabajoApredizajeAlex\\ActividadAprendizajeAA1-1ºEv.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\TrabajoApredizajeAlex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -43,8 +43,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -53,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.320\\RuntimeIdentifierGraph.json"
         }
       }
     }
