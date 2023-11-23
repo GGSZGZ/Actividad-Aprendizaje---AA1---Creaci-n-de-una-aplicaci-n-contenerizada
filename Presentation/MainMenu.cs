@@ -72,7 +72,7 @@ private static void ShowSecondMenu()
         Console.Write("Elige una opción: ");
 }
 
-private static void ShowThirdMenu()
+private static void ShowBookingMenu()
 {
     
         Console.WriteLine("1:Reservar mesa");
@@ -188,16 +188,21 @@ private static void CheckGuest(){
         switch (secondOption)
         {
             case 1:
+            int optionCoffee=0;
+            
                 showCoffeeMenu();
-                int optionCoffee=ReadOptionCB();
+                optionCoffee=ReadOptionCB();
                 //cafés
+                CoffeeService.AddCoffeeUser(optionCoffee,key);
                 
-                
+                    ShowSecondMenu();
+                    secondOption = ReadSecondOption();
+                    CoffeeMenu(secondOption,key);
                 break;
             case 2:
             var option=0;
             do{
-                ShowThirdMenu();
+                ShowBookingMenu();
                 option=ReadOption();
                 switch (option){
                     case 1:
@@ -227,6 +232,9 @@ private static void CheckGuest(){
                     
                 }
             }while(option!=4);
+                    ShowSecondMenu();
+                    secondOption = ReadSecondOption();
+                    CoffeeMenu(secondOption,key);
                 break;
             case 3:
                 CheckGuest();
