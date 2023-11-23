@@ -4,16 +4,16 @@
     "userLogged": false,
     "desknumber": 1,
     "numberpeople": 2,
-    "booked": true,
+    "booked": false,
     "notes": ""
   },
   {
-    "datebooked": "2023-11-20T11:30:00",
+    "datebooked": "2023-11-12T12:30:00",
     "userLogged": false,
     "desknumber": 2,
     "numberpeople": 4,
     "booked": false,
-    "notes": "vegana"
+    "notes": ""
   },
   {
     "datebooked": "2023-11-02T11:30:00",

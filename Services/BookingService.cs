@@ -80,6 +80,13 @@ public class BookingService{
             }
         }
         user.bookings.Remove(removeBooking);
+        foreach (var item in bookingList!){
+            if(removeBooking.desknumber==item.desknumber){
+                item.booked=false;
+                item.userLogged=false;
+                ModifyJsonBooked();
+            }
+        }
 
         Console.WriteLine("Reserva cancelada con éxito.");
         DictionaryUsers.dictionaryAccounts[key]=user;

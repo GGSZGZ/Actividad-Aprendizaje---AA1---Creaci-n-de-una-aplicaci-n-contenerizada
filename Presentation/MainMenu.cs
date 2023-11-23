@@ -7,9 +7,6 @@ public class MainMenu
     
     private static string key = "";
    
-   
-    
-
     public static void BeginMenu(){
         CoffeeService coffeMethod=new CoffeeService();
         UserService credentials=new UserService();
@@ -56,7 +53,6 @@ public class MainMenu
                     break;
             }
         } while (option != 4);
-        
     }
 
     private static void ShowMenu()
@@ -70,7 +66,6 @@ public class MainMenu
 
 private static void ShowSecondMenu()
 {
-    
         Console.WriteLine("1:Pedir café");
         Console.WriteLine("2:Reservas");
         Console.WriteLine("3:Salir");
@@ -193,9 +188,10 @@ private static void CheckGuest(){
         switch (secondOption)
         {
             case 1:
-
                 showCoffeeMenu();
                 int optionCoffee=ReadOptionCB();
+                //cafés
+                
                 
                 break;
             case 2:
@@ -222,10 +218,6 @@ private static void CheckGuest(){
                    
                     BookingService.CancelBooking(key);
                     UserService.WriteJsonUser();
-                    
-
-                    
-                    
                     break;
                     case 3:
                     //ver reservas
