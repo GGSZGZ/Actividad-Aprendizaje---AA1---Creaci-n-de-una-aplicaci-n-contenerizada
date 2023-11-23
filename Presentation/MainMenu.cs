@@ -7,12 +7,10 @@ public class MainMenu
     
     private static string key = "";
    
-   
-    
-
     public static void BeginMenu(){
         CoffeeService coffeMethod=new CoffeeService();
         UserService credentials=new UserService();
+        
         coffeMethod.readJsonCoffee();
          
         var option = 0;
@@ -20,6 +18,7 @@ public class MainMenu
 
         do
         {
+            BookingService.ShowBookedJson(false);
             ShowMenu();
             option = ReadOption();
            
@@ -48,12 +47,12 @@ public class MainMenu
                     UserService.WriteJsonUser();
                     ShowSecondMenu();
                     secondOption = ReadSecondOption();
+                    key="guest@gmail.com";
                     CoffeeMenu(secondOption, key);
 
                     break;
             }
         } while (option != 4);
-        
     }
 
     private static void ShowMenu()
@@ -67,7 +66,6 @@ public class MainMenu
 
 private static void ShowSecondMenu()
 {
-    
         Console.WriteLine("1:Pedir café");
         Console.WriteLine("2:Reservas");
         Console.WriteLine("3:Salir");
@@ -79,7 +77,8 @@ private static void ShowThirdMenu()
     
         Console.WriteLine("1:Reservar mesa");
         Console.WriteLine("2:Cancelar mesa");
-        Console.WriteLine("3:Salir");
+        Console.WriteLine("3:Mostrar mis reservas");
+        Console.WriteLine("4:Salir");
         Console.Write("Elige una opción: ");
 }
 
@@ -157,7 +156,7 @@ private static void CheckGuest(){
         return option;
     }
 
-    private static int ReadCoffeeOption()
+    private static int ReadOptionCB()
 {
     int option;
     do
@@ -185,18 +184,49 @@ private static void CheckGuest(){
 
     private static void CoffeeMenu(int secondOption, string key)
     {
-        
+        BookingService bookingService= new BookingService();
         switch (secondOption)
         {
             case 1:
                 showCoffeeMenu();
-                var opctionCoffee=ReadCoffeeOption();
+                int optionCoffee=ReadOptionCB();
+                //cafés
+                
                 
                 break;
             case 2:
+            var option=0;
+            do{
                 ShowThirdMenu();
-            var option=ReadOption();
-                Console.WriteLine("has elegido " + option);
+                option=ReadOption();
+                switch (option){
+                    case 1:
+                        BookingService.ShowBookedJson(true);
+                        int optionBooked=ReadOptionCB(); 
+                    if(BookingService.bookingList[optionBooked-1].booked==true){
+                            Console.WriteLine("Lo sentimos esta mesa no esta disponible");
+                            break;
+                        }else{
+                        Booking booked=BookingService.SelectingBooked(optionBooked);
+                        DictionaryUsers.dictionaryAccounts[key].bookings.Add(booked);
+                        UserService.WriteJsonUser();
+                        
+                    }
+                    break;
+                    case 2:
+                    //cancelar reserva
+                   
+                    BookingService.CancelBooking(key);
+                    UserService.WriteJsonUser();
+                    break;
+                    case 3:
+                    //ver reservas
+                    BookingService.ShowPersonalBookings(key);
+                    break;
+                    
+                    
+                }
+            }while(option!=4);
                 break;
             case 3:
                 CheckGuest();

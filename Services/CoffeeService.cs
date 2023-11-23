@@ -3,10 +3,10 @@ using System.Text.Json;
 using Models;
 
 public class CoffeeService{
-    public static List<Coffee> coffeeList = new List<Coffee>();
+    public static List<Coffee> coffeeList;
 
      public void readJsonCoffee(){
-
+        coffeeList = new List<Coffee>();
             string jsonString = File.ReadAllText("CoffeeJson.json");
                 // Realizar la deserialización del JSON a mi modelo transacciones
                 var coffeeRawJson = JsonSerializer.Deserialize<Coffee[]>(jsonString);
