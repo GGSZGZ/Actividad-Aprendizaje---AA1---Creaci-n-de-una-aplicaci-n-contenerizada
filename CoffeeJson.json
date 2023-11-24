@@ -45,7 +45,7 @@
     "origin": "Italia",
     "price": 4.5,
     "sugar": true,
-    "milk": true
+    "milk": false
   },
   {
     "name": "Macchiato",
