@@ -31,7 +31,7 @@ public class Coffee{
 
     public override string ToString()
         {
-            return $"Name: {name}, Description: {description}, Origin: {origin}, Price: {price}, Sugar: {sugar}, Milk: {milk}";
+            return $"Name: {name}, Description: {description}, Origin: {origin}, Price: {price}";
         }
 
     

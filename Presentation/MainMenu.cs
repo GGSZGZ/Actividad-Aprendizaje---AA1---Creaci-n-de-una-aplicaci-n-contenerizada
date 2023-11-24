@@ -82,12 +82,10 @@ private static void ShowBookingMenu()
         Console.Write("Elige una opción: ");
 }
 
-private static void showCoffeeMenu(){
+private static List<Coffee> showCoffeeMenu(){
 
-  foreach (var item in CoffeeService.coffeeList)
-        {
-            Console.WriteLine(item.ToString());
-        } 
+   List<Coffee> coffeeListUpdated=CoffeeService.CoffeeFilter();
+   return coffeeListUpdated;
 
 }
 
@@ -156,7 +154,7 @@ private static void CheckGuest(){
         return option;
     }
 
-    private static int ReadOptionCB()
+    private static int ReadOptionCB(int contador)
 {
     int option;
     do
@@ -164,9 +162,9 @@ private static void CheckGuest(){
         try
         {
             option = int.Parse(Console.ReadLine()!);
-            if (option <= 0 || option > 10)
+            if (option <= 0 || option>contador)
             {
-                Console.WriteLine("Debes introducir un valor entre 1 y 10");
+                Console.WriteLine("Debes introducir un valor entre 1 y " + contador);
             }
             else
             {
@@ -190,10 +188,11 @@ private static void CheckGuest(){
             case 1:
             int optionCoffee=0;
             
-                showCoffeeMenu();
-                optionCoffee=ReadOptionCB();
+                List<Coffee> coffeeListUpdated=showCoffeeMenu();
+                optionCoffee=ReadOptionCB(coffeeListUpdated.Count);
+                
                 //cafés
-                CoffeeService.AddCoffeeUser(optionCoffee,key);
+                CoffeeService.AddCoffeeUser(coffeeListUpdated[optionCoffee-1],key);
                 
                     ShowSecondMenu();
                     secondOption = ReadSecondOption();
@@ -207,7 +206,7 @@ private static void CheckGuest(){
                 switch (option){
                     case 1:
                         BookingService.ShowBookedJson(true);
-                        int optionBooked=ReadOptionCB(); 
+                        int optionBooked=ReadOptionCB(10); 
                     if(BookingService.bookingList[optionBooked-1].booked==true){
                             Console.WriteLine("Lo sentimos esta mesa no esta disponible");
                             break;
@@ -220,7 +219,6 @@ private static void CheckGuest(){
                     break;
                     case 2:
                     //cancelar reserva
-                   
                     BookingService.CancelBooking(key);
                     UserService.WriteJsonUser();
                     break;
