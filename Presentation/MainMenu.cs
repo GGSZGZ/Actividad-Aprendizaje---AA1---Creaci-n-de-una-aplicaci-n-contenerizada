@@ -1,4 +1,5 @@
 
+using Spectre.Console;
 using Models;
 using Services;
 
@@ -57,28 +58,28 @@ public class MainMenu
 
     private static void ShowMenu()
 {
-    Console.WriteLine("1:Crear cuenta");
-    Console.WriteLine("2:Iniciar sesión");
-    Console.WriteLine("3:Iniciar sesión como invitado");
-    Console.WriteLine("4:Salir");
+    AnsiConsole.MarkupLine(@"[yellow]1:[/] [bold]Crear cuenta[/]");
+    AnsiConsole.MarkupLine(@"[yellow]2:[/] [bold]Iniciar sesión[/]");
+    AnsiConsole.MarkupLine(@"[yellow]3:[/] [bold]Iniciar sesión como invitado[/]");
+    AnsiConsole.MarkupLine(@"[yellow]4:[/] [bold]Salir[/]");
     Console.Write("Elige una opción: ");
 }
 
 private static void ShowSecondMenu()
 {
-        Console.WriteLine("1:Pedir café");
-        Console.WriteLine("2:Reservas");
-        Console.WriteLine("3:Salir");
+        AnsiConsole.MarkupLine(@"[yellow]1:[/] [bold]Pedir café[/]");
+        AnsiConsole.MarkupLine(@"[yellow]2:[/] [bold]Reservas[/]");
+        AnsiConsole.MarkupLine(@"[yellow]3:[/] [bold]Salir[/]");
         Console.Write("Elige una opción: ");
 }
 
 private static void ShowBookingMenu()
 {
-    
-        Console.WriteLine("1:Reservar mesa");
-        Console.WriteLine("2:Cancelar mesa");
-        Console.WriteLine("3:Mostrar mis reservas");
-        Console.WriteLine("4:Salir");
+        
+        AnsiConsole.MarkupLine("[yellow]1:[/] [bold]Reservar mesa[/]");
+        AnsiConsole.MarkupLine("[yellow]2:[/] [bold]Cancelar mesa[/]");
+        AnsiConsole.MarkupLine("[yellow]3:[/] [bold]Mostrar mis reservas[/]");
+        AnsiConsole.MarkupLine("[yellow]4:[/] [bold]Salir[/]");
         Console.Write("Elige una opción: ");
 }
 
@@ -108,7 +109,7 @@ private static void CheckGuest(){
             option = int.Parse(Console.ReadLine()!);
             if (option <= 0 || option > 4)
             {
-                Console.WriteLine("Debes introducir un valor entre 1 y 4");
+                AnsiConsole.MarkupLine("[red]Debes introducir un valor entre 1 y 4[/]");
             }
             else
             {
@@ -117,7 +118,7 @@ private static void CheckGuest(){
         }
         catch (FormatException)
         {
-            Console.WriteLine("Debes introducir un valor numérico");
+            AnsiConsole.MarkupLine("[red]Debes introducir un valor numérico[/]");
         }
     } while (true);
 
@@ -137,8 +138,7 @@ private static void CheckGuest(){
 
                 if (option < 1 || option > 3)
                 {
-                    
-                    Console.WriteLine("Debes introducir valores comprendidos entre 1 y 3");
+                    AnsiConsole.MarkupLine("[red]Debes introducir un valor entre 1 y 3[/]");
                 }
                 else
                 {
@@ -147,7 +147,7 @@ private static void CheckGuest(){
             }
             catch (FormatException)
             {
-                Console.WriteLine("Debes introducir valores numéricos");
+                AnsiConsole.MarkupLine("[red]Debes introducir un valor numérico[/]");
             }
         } while (true);
 
@@ -164,7 +164,7 @@ private static void CheckGuest(){
             option = int.Parse(Console.ReadLine()!);
             if (option <= 0 || option>contador)
             {
-                Console.WriteLine("Debes introducir un valor entre 1 y " + contador);
+                AnsiConsole.MarkupLine("[red]Debes introducir un valor entre 1 y " + contador+"[/]");
             }
             else
             {
@@ -173,7 +173,7 @@ private static void CheckGuest(){
         }
         catch (FormatException)
         {
-            Console.WriteLine("Debes introducir un valor numérico");
+            AnsiConsole.MarkupLine("[red]Debes introducir un valor numérico[/]");
         }
     } while (true);
 

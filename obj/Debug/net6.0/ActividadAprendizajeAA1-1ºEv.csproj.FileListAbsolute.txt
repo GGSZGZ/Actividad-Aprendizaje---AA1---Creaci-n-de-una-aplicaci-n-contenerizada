@@ -58,3 +58,20 @@ C:\Users\Usuario\OneDrive\Escritorio\TrabajoApredizajeAlex\obj\Debug\net6.0\refi
 C:\Users\Usuario\OneDrive\Escritorio\TrabajoApredizajeAlex\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
 C:\Users\Usuario\OneDrive\Escritorio\TrabajoApredizajeAlex\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\TrabajoApredizajeAlex\obj\Debug\net6.0\ref\ActividadAprendizajeAA1-1ºEv.dll
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.exe
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.deps.json
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.runtimeconfig.json
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.dll
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\bin\Debug\net6.0\Spectre.Console.dll
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.CopyComplete
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.dll
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\refint\ActividadAprendizajeAA1-1ºEv.dll
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ref\ActividadAprendizajeAA1-1ºEv.dll

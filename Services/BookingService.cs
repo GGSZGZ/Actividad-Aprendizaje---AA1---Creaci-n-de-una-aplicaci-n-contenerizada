@@ -1,5 +1,6 @@
 
 using System.Text.Json;
+using Spectre.Console;
 using Data;
 using Models;
 public class BookingService{
@@ -30,18 +31,19 @@ public class BookingService{
         User user=DictionaryUsers.dictionaryAccounts[key];
         foreach (var item in user.bookings)
         {
-            Console.WriteLine("*******************************");
-            Console.WriteLine("    Detalles de la Reserva");
-            Console.WriteLine("*******************************");
-            Console.WriteLine("Reserva realizada a fecha: " + item.datebooked);
-            Console.WriteLine("Número de la mesa reservada: " + item.desknumber);
-            Console.WriteLine("Número de personas: " + item.numberpeople);
+            AnsiConsole.MarkupLine("[blue]*******************************[/]");
+            AnsiConsole.MarkupLine("[green]    Detalles de la Reserva[/]");
+            AnsiConsole.MarkupLine("[green]*******************************[/]");
+
+            AnsiConsole.MarkupLine("[green]Reserva realizada a fecha: "+item.datebooked+"[/]");
+            AnsiConsole.MarkupLine("[green]Número de la mesa reservada: "+item.desknumber+"[/]");
+            AnsiConsole.MarkupLine("[green]Número de personas: "+item.numberpeople+"[/]");
+    
             if (!string.IsNullOrEmpty(item.notes))
             {
-                Console.WriteLine("Anotaciones: " + item.notes);
+            AnsiConsole.MarkupLine("[green]Anotaciones: "+item.notes+"[/]");      
             }
-            Console.WriteLine("*******************************");
-
+            AnsiConsole.MarkupLine("[blue]*******************************[/]");
         }
     }
     public static void CancelBooking(string key){
@@ -50,25 +52,33 @@ public class BookingService{
 
      foreach (var item in user.bookings)
         {
-            Console.WriteLine("*******************************");
-            Console.WriteLine("    Detalles de la Reserva");
-            Console.WriteLine("*******************************");
-            Console.WriteLine("Reserva realizada a fecha: " + item.datebooked);
-            Console.WriteLine("Número de la mesa reservada: " + item.desknumber);
-            Console.WriteLine("Número de personas: " + item.numberpeople);
+             AnsiConsole.MarkupLine("[blue]*******************************[/]");
+            AnsiConsole.MarkupLine("[green]    Detalles de la Reserva[/]");
+            AnsiConsole.MarkupLine("[green]*******************************[/]");
+
+            AnsiConsole.MarkupLine("[green]Reserva realizada a fecha: "+item.datebooked+"[/]");
+            AnsiConsole.MarkupLine("[green]Número de la mesa reservada: "+item.desknumber+"[/]");
+            AnsiConsole.MarkupLine("[green]Número de personas: "+item.numberpeople+"[/]");
             if (!string.IsNullOrEmpty(item.notes))
             {
-                Console.WriteLine("Anotaciones: " + item.notes);
+                AnsiConsole.MarkupLine("[green]Anotaciones: "+item.notes+"[/]"); 
             }
-            Console.WriteLine("*******************************");
+            AnsiConsole.MarkupLine("[blue]*******************************[/]");
 
         }
-        Console.Write("Ingrese el número de reserva que desea cancelar: (número de mesa)");
-        int cancelOption;
-
-        while (!int.TryParse(Console.ReadLine(), out cancelOption) || cancelOption < 1 || cancelOption>10)
+         int cancelOption;
+        while (true)
         {
-            Console.Write("Entrada inválida. Ingrese un número de reserva válido: ");
+            
+            if (!int.TryParse(AnsiConsole.Prompt(new TextPrompt<string>("[yellow]Ingrese el número de reserva que desea cancelar: (número de mesa)[/]")), out cancelOption) || cancelOption < 1 || cancelOption>10)
+
+            {
+                AnsiConsole.MarkupLine("[red]Entrada inválida. Ingrese un número de reserva válido: [/]");
+            }
+            else
+            {
+                break;
+            }
         }
 
         // Restamos 1 porque los índices de la lista comienzan desde 0
@@ -87,8 +97,7 @@ public class BookingService{
                 ModifyJsonBooked();
             }
         }
-
-        Console.WriteLine("Reserva cancelada con éxito.");
+        AnsiConsole.MarkupLine("[green]Reserva cancelada con éxito.[/]");
         DictionaryUsers.dictionaryAccounts[key]=user;
     }
 
@@ -97,15 +106,25 @@ public class BookingService{
    public static Booking SelectingBooked(int optionBooked)
 {
         
-        Console.Write("Ingresa el número de día: ");
-        int dia = int.Parse(Console.ReadLine()!);
 
-        
-        Console.Write("Ingresa la hora (formato HH:mm): ");
-        string horaTexto = Console.ReadLine()!;
+        int dia;
+        while (true)
+        {
+            
+            if (int.TryParse(AnsiConsole.Prompt(new TextPrompt<string>("[yellow]Ingresa el número de día:[/]")), out dia))
+            {
+                break;
+            }
+            else
+            {
+                AnsiConsole.MarkupLine("[red]Por favor, ingrese el formato correcto[/]");
+            }
+        }
 
-        Console.Write("Algún comentario: ");
-        string nota=Console.ReadLine()!;
+        string horaTexto = AnsiConsole.Ask<string>("[yellow]Ingresa la hora (formato HH:mm): [/]");
+
+
+        string nota = AnsiConsole.Ask<string>("[yellow]Algún comentario: [/]");
         
         string fechaHoraTexto = $"{dia}/{DateTime.Now.Month}/{DateTime.Now.Year} {horaTexto}";
 
@@ -113,12 +132,12 @@ public class BookingService{
         if (DateTime.TryParse(fechaHoraTexto, out DateTime resultado))
         {
             
-            Console.WriteLine(resultado + " y comentario " + nota);
+           AnsiConsole.MarkupLine("[green]"+resultado+" y comentario "+nota+"[/]");
         }
         else
         {
             
-           Console.WriteLine("Formato de fecha y hora incorrecto.");
+           AnsiConsole.MarkupLine("[red]Formato de fecha y hora incorrecto.[/]");
         }
 
     

@@ -1,11 +1,11 @@
 [
   {
-    "datebooked": "2023-11-03T04:30:00",
+    "datebooked": "2023-11-02T02:30:00",
     "userLogged": false,
     "desknumber": 1,
     "numberpeople": 2,
     "booked": false,
-    "notes": "nota"
+    "notes": "vegano"
   },
   {
     "datebooked": "2023-11-22T12:20:00",
@@ -72,11 +72,11 @@
     "notes": ""
   },
   {
-    "datebooked": "2023-11-12T12:30:00",
+    "datebooked": "0001-01-01T00:00:00",
     "userLogged": false,
     "desknumber": 10,
     "numberpeople": 1,
     "booked": false,
-    "notes": ""
+    "notes": "no"
   }
 ]

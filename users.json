@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "Name": "guille",
+    "Surname": "garcia",
+    "Age": 12,
+    "Bookings": [
+      {
+        "DateBooked": "0001-01-01T00:00:00",
+        "UserLogged": false,
+        "DeskNumber": 10,
+        "NumberPeople": 1,
+        "Booked": true,
+        "Notes": "no"
+      },
+      {
+        "DateBooked": "2023-11-02T02:30:00",
+        "UserLogged": false,
+        "DeskNumber": 1,
+        "NumberPeople": 2,
+        "Booked": true,
+        "Notes": "vegano"
+      }
+    ],
+    "UserCoffees": [
+      {
+        "Name": "Affogato",
+        "Description": "A little espresso with a scoop of ice cream",
+        "Origin": "Italia",
+        "Price": 4.5,
+        "Sugar": true,
+        "Milk": false
+      }
+    ],
+    "Date": "2023-11-26T00:00:00+01:00",
+    "Password": "1|",
+    "Email": "guille@gmail.com"
+  }
+]
