@@ -74,6 +74,8 @@ public class BookingService{
 
             {
                 AnsiConsole.MarkupLine("[red]Entrada inválida. Ingrese un número de reserva válido: [/]");
+                
+                Logger.SaveLog(Logger.GetExceptionMessage());
             }
             else
             {
@@ -83,11 +85,17 @@ public class BookingService{
 
         // Restamos 1 porque los índices de la lista comienzan desde 0
         var removeBooking= new Booking();
+        bool exitCancel=false;
         foreach (var i in user.bookings)
         {
             if(i.desknumber==cancelOption){
                 removeBooking=i;
+                exitCancel=true;
             }
+        }
+        if(exitCancel==false){
+            AnsiConsole.MarkupLine("[red]No se encontró la reserva[/]");
+            Logger.SaveLog("Booking not founded.");
         }
         user.bookings.Remove(removeBooking);
         foreach (var item in bookingList!){
@@ -97,8 +105,10 @@ public class BookingService{
                 ModifyJsonBooked();
             }
         }
+        if(exitCancel==true){
         AnsiConsole.MarkupLine("[green]Reserva cancelada con éxito.[/]");
         DictionaryUsers.dictionaryAccounts[key]=user;
+        }
     }
 
 
@@ -118,6 +128,7 @@ public class BookingService{
             else
             {
                 AnsiConsole.MarkupLine("[red]Por favor, ingrese el formato correcto[/]");
+                Logger.SaveLog(Logger.GetExceptionMessage());
             }
         }
 
@@ -138,6 +149,7 @@ public class BookingService{
         {
             
            AnsiConsole.MarkupLine("[red]Formato de fecha y hora incorrecto.[/]");
+           Logger.SaveLog(Logger.GetExceptionMessage());
         }
 
     

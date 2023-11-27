@@ -1,6 +1,9 @@
 # version de la imagen , el as es un alias,nombre
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 
+# Agregar una variable de entorno
+ENV PROGRAM_VERSION 1.0.0
+
 #crea una carpeta en la imagen app y me meto en ella, es la ruta de trabajo
 WORKDIR /app
 
@@ -36,5 +39,5 @@ COPY --from=publish /app/publish .
 # Configura el puerto de uso del contenedor
 EXPOSE 7315
 
-#cada vez que ejecuta,es el exe, el programa, ejecuta donde trabajoalex.dll
 ENTRYPOINT ["dotnet", "ActividadAprendizajeAA1-1ºEv.dll"]
+ 

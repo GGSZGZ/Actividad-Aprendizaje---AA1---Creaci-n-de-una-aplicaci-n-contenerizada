@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fUzwRyiE5+Gi8hwWBdp7YEX46cHBjMbpJLstK1a4UgmHf/9BKFurqgM8uDbyAdbOokfNBWeW3Ut3cKI53yBCig==",
+  "dgSpecHash": "4RgUa4UhVVugXXfxiyJ8D/4k4ctz/e0bgcUoE2JupHptj5kRzdX7CR6jYa4Hky9wqQvJ9Osmcakv4+1d545ttQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\Antes del pushSpectre\\ActividadAprendizajeAA1-1ºEv.csproj",
+  "projectFilePath": "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\Desktop\\SanValero\\DesarrolloWebServidor\\ClaseAlex\\ActividadAprendizajeAA1-1ºEv\\ActividadAprendizajeAA1-1ºEv.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
+    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\guill.LAPTOP-8JJE69SF.001\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
   ],
   "logs": []
 }

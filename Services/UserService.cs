@@ -26,6 +26,7 @@ public class UserService{
             else
             {
                 AnsiConsole.MarkupLine("[red]Por favor, ingrese una edad válida[/]");
+                Logger.SaveLog(Logger.GetExceptionMessage());
             }
         }
 

@@ -58,6 +58,14 @@ public class MainMenu
 
     private static void ShowMenu()
 {
+    // var programVersion = Environment.GetEnvironmentVariable("PROGRAM_VERSION");
+    // Console.WriteLine($"Program Version: {programVersion}");
+    string miVariableEntorno = Environment.GetEnvironmentVariable("PROGRAM_VERSION");
+
+    // Console.WriteLine($"{miVariableEntorno}");
+        // Hacer algo con la variable de entorno
+    AnsiConsole.MarkupLine(@"[maroon][/]Coffee Royale ("+miVariableEntorno+")[bold][/]");
+
     AnsiConsole.MarkupLine(@"[yellow]1:[/] [bold]Crear cuenta[/]");
     AnsiConsole.MarkupLine(@"[yellow]2:[/] [bold]Iniciar sesión[/]");
     AnsiConsole.MarkupLine(@"[yellow]3:[/] [bold]Iniciar sesión como invitado[/]");
@@ -110,15 +118,17 @@ private static void CheckGuest(){
             if (option <= 0 || option > 4)
             {
                 AnsiConsole.MarkupLine("[red]Debes introducir un valor entre 1 y 4[/]");
+                 Logger.SaveLog(Logger.GetExceptionMessage());
             }
             else
             {
                 break;
             }
         }
-        catch (FormatException)
+        catch (FormatException e)
         {
             AnsiConsole.MarkupLine("[red]Debes introducir un valor numérico[/]");
+            Logger.SaveLog(e.ToString());
         }
     } while (true);
 
@@ -139,15 +149,17 @@ private static void CheckGuest(){
                 if (option < 1 || option > 3)
                 {
                     AnsiConsole.MarkupLine("[red]Debes introducir un valor entre 1 y 3[/]");
+                    Logger.SaveLog(Logger.GetExceptionMessage());
                 }
                 else
                 {
                     break;
                 }
             }
-            catch (FormatException)
+            catch (FormatException e)
             {
                 AnsiConsole.MarkupLine("[red]Debes introducir un valor numérico[/]");
+                Logger.SaveLog(e.ToString());
             }
         } while (true);
 
@@ -165,15 +177,17 @@ private static void CheckGuest(){
             if (option <= 0 || option>contador)
             {
                 AnsiConsole.MarkupLine("[red]Debes introducir un valor entre 1 y " + contador+"[/]");
+                Logger.SaveLog(Logger.GetExceptionMessage());
             }
             else
             {
                 break;
             }
         }
-        catch (FormatException)
+        catch (FormatException e)
         {
             AnsiConsole.MarkupLine("[red]Debes introducir un valor numérico[/]");
+            Logger.SaveLog(e.ToString());
         }
     } while (true);
 
@@ -208,7 +222,7 @@ private static void CheckGuest(){
                         BookingService.ShowBookedJson(true);
                         int optionBooked=ReadOptionCB(10); 
                     if(BookingService.bookingList[optionBooked-1].booked==true){
-                            Console.WriteLine("Lo sentimos esta mesa no esta disponible");
+                            AnsiConsole.MarkupLine("[red]Lo sentimos esta mesa no esta disponible[/]");
                             break;
                         }else{
                         Booking booked=BookingService.SelectingBooked(optionBooked);
