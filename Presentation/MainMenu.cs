@@ -58,14 +58,6 @@ public class MainMenu
 
     private static void ShowMenu()
 {
-    // var programVersion = Environment.GetEnvironmentVariable("PROGRAM_VERSION");
-    // Console.WriteLine($"Program Version: {programVersion}");
-    string miVariableEntorno = Environment.GetEnvironmentVariable("PROGRAM_VERSION");
-
-    // Console.WriteLine($"{miVariableEntorno}");
-        // Hacer algo con la variable de entorno
-    AnsiConsole.MarkupLine(@"[maroon][/]Coffee Royale ("+miVariableEntorno+")[bold][/]");
-
     AnsiConsole.MarkupLine(@"[yellow]1:[/] [bold]Crear cuenta[/]");
     AnsiConsole.MarkupLine(@"[yellow]2:[/] [bold]Iniciar sesión[/]");
     AnsiConsole.MarkupLine(@"[yellow]3:[/] [bold]Iniciar sesión como invitado[/]");
@@ -225,7 +217,7 @@ private static void CheckGuest(){
                             AnsiConsole.MarkupLine("[red]Lo sentimos esta mesa no esta disponible[/]");
                             break;
                         }else{
-                        Booking booked=BookingService.SelectingBooked(optionBooked);
+                        Booking booked=BookingService.SelectingBooked(optionBooked,DictionaryUsers.dictionaryAccounts[key]);
                         DictionaryUsers.dictionaryAccounts[key].bookings.Add(booked);
                         UserService.WriteJsonUser();
                         

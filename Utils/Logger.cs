@@ -1,11 +1,14 @@
 public class Logger{
     public static void SaveLog(string errorMessage)
     {
-        
+         string versionEnv = Environment.GetEnvironmentVariable("PROGRAM_VERSION");
+        if(versionEnv=="" || versionEnv ==null){
+            versionEnv="1.0.0";
+        }
         string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
        
-        string logEntry = $"{timestamp} - ERROR: {errorMessage}";
+        string logEntry = $"[v{versionEnv}]{timestamp} - ERROR: {errorMessage}";
 
         // Abrir el archivo en modo de escritura (si no existe, se creará)
         using (StreamWriter writer = new StreamWriter("Utils/error_logs.txt", true))

@@ -52,11 +52,8 @@ public class UserService{
             
             password = AnsiConsole.Ask<string>("[yellow]Ingrese su contraseña:[/]");
             
-            if (password == User.account_Seed.ToString())
-            {
-                AnsiConsole.MarkupLine("[red]Ingrese una contraseña que no exista ya[/]");
-            }
-            else if (EsNumero(password))
+            
+            if (EsNumero(password))
             {
                 AnsiConsole.MarkupLine("[red]La contraseña debe contener caracteres numéricos y letras[/]");
             }
@@ -72,7 +69,11 @@ public class UserService{
     }
 
     public void CreateGuest(){
-                User user=new User(User.account_Seed.ToString());
+        string guestUser = Environment.GetEnvironmentVariable("USER_GUEST");
+        if(guestUser=="" || guestUser==null){
+            guestUser="guest@gmail.com";
+        }
+                User user=new User(guestUser);
                 DictionaryUsers.dictionaryAccounts.Add(user.email!, user);
 
     }

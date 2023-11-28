@@ -113,9 +113,9 @@ public class BookingService{
 
 
 
-   public static Booking SelectingBooked(int optionBooked)
+   public static Booking SelectingBooked(int optionBooked,User user)
 {
-        
+    
 
         int dia;
         while (true)
@@ -151,8 +151,8 @@ public class BookingService{
            AnsiConsole.MarkupLine("[red]Formato de fecha y hora incorrecto.[/]");
            Logger.SaveLog(Logger.GetExceptionMessage());
         }
-
     
+    bookingList[optionBooked-1].userLogged=user.isLogged();
     bookingList[optionBooked-1].booked=true;
     bookingList[optionBooked-1].datebooked=resultado;
     bookingList[optionBooked-1].notes=nota;
