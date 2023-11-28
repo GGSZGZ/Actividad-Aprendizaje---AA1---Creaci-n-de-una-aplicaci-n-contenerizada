@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "Name": "juan",
+    "Surname": "sanz",
+    "Age": 21,
+    "Bookings": [
+      {
+        "DateBooked": "2023-11-01T02:40:00",
+        "UserLogged": true,
+        "DeskNumber": 2,
+        "NumberPeople": 4,
+        "Booked": true,
+        "Notes": "no"
+      }
+    ],
+    "UserCoffees": [],
+    "Date": "2023-11-28T00:00:00+01:00",
+    "Password": "12@",
+    "Email": "juan@gmail.com"
+  }
+]

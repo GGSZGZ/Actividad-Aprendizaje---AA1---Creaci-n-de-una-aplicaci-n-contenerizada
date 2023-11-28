@@ -19,7 +19,7 @@ public class User{
     
     public string? email{get;set;}
 
-    public static string account_Seed = "1000";
+
 
     //CONSTRUCTOR
     public User(string password,string name = "GUEST", string surname = "GUEST", int age = 0,string email="guest@gmail.com"){
@@ -30,12 +30,6 @@ public class User{
     this.password = password;
     this.email=email;
     
-
-    if (isLogged()==false)
-    {   
-        this.password = account_Seed.ToString();
-        account_Seed += 1;
-    }
 }
 
 public bool isLogged(){

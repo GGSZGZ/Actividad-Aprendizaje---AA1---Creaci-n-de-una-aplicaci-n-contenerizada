@@ -26,7 +26,9 @@ RUN dotnet publish -c Release -o /app/publish
 #Inicia una nueva etapa en la construcción de la imagen, basada en la imagen oficial de ASP.NET para .NET 6.0.
 # Esta será la imagen final que contendrá la aplicación publicada.
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
-
+# Agregar una variable de entorno
+ENV USER_GUEST "guest@gmail.com"
+ENV PROGRAM_VERSION 1.0.0
 #Establece el directorio de trabajo dentro de la imagen final como "/app"
 WORKDIR /app
 
@@ -36,5 +38,5 @@ COPY --from=publish /app/publish .
 # Configura el puerto de uso del contenedor
 EXPOSE 7315
 
-#cada vez que ejecuta,es el exe, el programa, ejecuta donde trabajoalex.dll
 ENTRYPOINT ["dotnet", "ActividadAprendizajeAA1-1ºEv.dll"]
+ 
