@@ -35,8 +35,8 @@ WORKDIR /app
 #Copia los archivos publicados desde la etapa "publish" al directorio de trabajo en la imagen final
 COPY --from=publish /app/publish .
 
-COPY /Jsons /app/Jsons/
-COPY /Utils/*.txt /app/Utils/
+COPY Jsons/*.json /app/Jsons/
+COPY Utils/*.txt /app/Utils/
 COPY README.MD /app
 
 # Configura el puerto de uso del contenedor
