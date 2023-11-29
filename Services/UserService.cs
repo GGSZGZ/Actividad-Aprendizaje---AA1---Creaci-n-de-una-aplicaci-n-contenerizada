@@ -111,7 +111,7 @@ public class UserService{
 
 
     public static void WriteJsonUser(){
-        string filePath = @".\users.json";
+        string filePath = "Jsons/users.json";
         var jsonData = new List<Dictionary<string, object>>();
 
         foreach (var userEntry in DictionaryUsers.dictionaryAccounts)

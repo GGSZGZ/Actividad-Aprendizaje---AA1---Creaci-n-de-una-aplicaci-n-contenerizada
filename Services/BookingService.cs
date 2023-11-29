@@ -7,7 +7,7 @@ public class BookingService{
     public static List<Booking> ?bookingList;
     public static void ShowBookedJson(bool show){
     bookingList = new List<Booking>();
-            string jsonString = File.ReadAllText("BookingJson.json");
+            string jsonString = File.ReadAllText("Jsons/BookingJson.json");
                 // Realizar la deserialización del JSON a mi modelo transacciones
                 var bookedRawJson = JsonSerializer.Deserialize<Booking[]>(jsonString);
 
@@ -163,7 +163,7 @@ public class BookingService{
 
     public static void ModifyJsonBooked(){
       string updatedJson=JsonSerializer.Serialize(bookingList, new JsonSerializerOptions { WriteIndented = true });
-      File.WriteAllText("BookingJson.json", updatedJson);
+      File.WriteAllText("Jsons/BookingJson.json", updatedJson);
     }
 
     public static void RebootJsonBooked(){

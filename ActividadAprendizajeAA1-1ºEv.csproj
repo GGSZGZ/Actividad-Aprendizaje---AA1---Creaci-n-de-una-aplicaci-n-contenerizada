@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
-    <None Update="*.json">
+    <None Update="Jsons\*.json">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </None>
 
