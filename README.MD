@@ -1,10 +1,10 @@
 
-<!-- Por favor lee atentamente las siguientes instrucciones -->
+<!-- Esta aplicación consiste en una cafetería en la cual puedes darte de alta y reservar mesas además de pedir cafés -->
 
 <!-- Escribe la siguiente línea en la terminal para ejecutar la imagen normal -->
 docker run -it --rm -p 7315:7315 ggszgz/coffeeroyale:latest
 
 <!-- Escribe la siguiente línea en la terminal para ejecutar la imagen y crear dos volúmenes 
 estos almacenaran los logs y los jsons de la aplicación-->
-docker run -v "jsons:/app/Jsons" -v "logs:/app/Utils" -it --rm -p 7315:7315 ggszgz/coffeeroyale:latest
+docker run -v "$(pwd)/jsons:/app/Jsons" -v "$(pwd)/logs:/app/Utils" -it --rm -p 7315:7315 ggszgz/coffeeroyale:latest
 
