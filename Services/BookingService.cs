@@ -1,4 +1,4 @@
-
+namespace Services;
 using System.Text.Json;
 using Spectre.Console;
 using Data;
@@ -7,7 +7,7 @@ public class BookingService{
     public static List<Booking> ?bookingList;
     public static void ShowBookedJson(bool show){
     bookingList = new List<Booking>();
-            string jsonString = File.ReadAllText("Jsons/BookingJson.json");
+            string jsonString = File.ReadAllText("Data/BookingJson.json");
                 // Realizar la deserialización del JSON a mi modelo transacciones
                 var bookedRawJson = JsonSerializer.Deserialize<Booking[]>(jsonString);
 
@@ -163,7 +163,7 @@ public class BookingService{
 
     public static void ModifyJsonBooked(){
       string updatedJson=JsonSerializer.Serialize(bookingList, new JsonSerializerOptions { WriteIndented = true });
-      File.WriteAllText("Jsons/BookingJson.json", updatedJson);
+      File.WriteAllText("Data/BookingJson.json", updatedJson);
     }
 
     public static void RebootJsonBooked(){

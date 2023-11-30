@@ -10,7 +10,7 @@ public class CoffeeService{
      public void readJsonCoffee(){
         coffeeList = new List<Coffee>();
         
-            string jsonString = File.ReadAllText("Jsons/CoffeeJson.json");
+            string jsonString = File.ReadAllText("Data/CoffeeJson.json");
                 // Realizar la deserialización del JSON a mi modelo transacciones
                 var coffeeRawJson = JsonSerializer.Deserialize<Coffee[]>(jsonString);
 
