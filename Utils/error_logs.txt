@@ -11,3 +11,5 @@
    at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
    at System.Int32.Parse(String s)
    at MainMenu.ReadOptionCB(Int32 contador) in C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\Presentation\MainMenu.cs:line 168
+[v1.0.0]2023-11-30 18:00:41 - ERROR: One of the identified items was in an invalid format.
+[v1.0.0]2023-11-30 18:24:41 - ERROR: One of the identified items was in an invalid format.

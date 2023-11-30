@@ -1,4 +1,4 @@
-
+namespace Presentation;
 using Spectre.Console;
 using Models;
 using Services;
@@ -43,14 +43,13 @@ public class MainMenu
                     break;
 
                     case 3:
-                    Console.WriteLine("Sesión iniciada como invitado");
                     credentials.CreateGuest();
                     UserService.WriteJsonUser();
+                    AnsiConsole.MarkupLine("[green] Sesión iniciada como invitado [/]");
                     ShowSecondMenu();
                     secondOption = ReadSecondOption();
                     key="guest@gmail.com";
                     CoffeeMenu(secondOption, key);
-
                     break;
             }
         } while (option != 4);
