@@ -1,8 +1,0 @@
-
-[v1.0.0]2023-11-28 16:57:27 - ERROR: One of the identified items was in an invalid format.
-[v1.0.0]2023-11-28 16:57:33 - ERROR: System.FormatException: Input string was not in a correct format.
-   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
-   at System.Int32.Parse(String s)
-   at MainMenu.ReadOption() in C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\Presentation\MainMenu.cs:line 109
-[v1.0.0]2023-11-28 16:58:26 - ERROR: One of the identified items was in an invalid format.
-[v1.0.0]2023-11-28 16:58:31 - ERROR: One of the identified items was in an invalid format.
