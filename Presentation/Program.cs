@@ -1,8 +1,16 @@
-﻿
-AppDomain.CurrentDomain.ProcessExit += OnProcessExit!;
-MainMenu.BeginMenu();
+﻿namespace Presentation;
+using Services;
 
-static void OnProcessExit(object sender, EventArgs e)
+public class Program{
+    public static void Main(){
+        AppDomain.CurrentDomain.ProcessExit += OnProcessExit!;
+        MainMenu.BeginMenu();
+    }
+    static void OnProcessExit(object sender, EventArgs e)
     {
         BookingService.RebootJsonBooked();
     }
+}
+
+
+

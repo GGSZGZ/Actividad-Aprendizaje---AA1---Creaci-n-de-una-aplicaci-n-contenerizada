@@ -75,9 +75,27 @@ C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\refi
 C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
 C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.genruntimeconfig.cache
 C:\Users\Usuario\OneDrive\Escritorio\Antes del pushSpectre\obj\Debug\net6.0\ref\ActividadAprendizajeAA1-1ºEv.dll
-C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\BookingJson.json
-C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\CoffeeJson.json
-C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\users.json
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\Spectre.Console.dll
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.CopyComplete
 C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\Utils\error_logs.txt
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\Jsons\BookingJson.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\Jsons\CoffeeJson.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\Jsons\users.json
+C:\Users\guill.LAPTOP-8JJE69SF.001\Desktop\SanValero\DesarrolloWebServidor\ClaseAlex\ActividadAprendizajeAA1-1ºEv\bin\Debug\net6.0\README.MD
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.AssemblyReference.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.GeneratedMSBuildEditorConfig.editorconfig
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.AssemblyInfoInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.AssemblyInfo.cs
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.CoreCompileInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\refint\ActividadAprendizajeAA1-1ºEv.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.exe
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.deps.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.runtimeconfig.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\bin\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\bin\Debug\net6.0\Spectre.Console.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.csproj.CopyComplete
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ActividadAprendizajeAA1-1ºEv.genruntimeconfig.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1- Capas\obj\Debug\net6.0\ref\ActividadAprendizajeAA1-1ºEv.dll

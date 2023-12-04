@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\ActividadAprendizajeAA1-1ºEv.csproj": {}
+    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj": {}
   },
   "projects": {
-    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\ActividadAprendizajeAA1-1ºEv.csproj": {
+    "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\ActividadAprendizajeAA1-1ºEv.csproj",
-        "projectName": "ActividadAprendizajeAA1-1ºEv",
-        "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\ActividadAprendizajeAA1-1ºEv.csproj",
+        "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj",
+        "projectName": "AA1.Presentation",
+        "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj",
         "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-        "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\obj\\",
+        "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"

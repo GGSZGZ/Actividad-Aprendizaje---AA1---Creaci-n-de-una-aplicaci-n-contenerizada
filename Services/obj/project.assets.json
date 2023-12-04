@@ -85,11 +85,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\ActividadAprendizajeAA1-1ºEv.csproj",
-      "projectName": "ActividadAprendizajeAA1-1ºEv",
-      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\ActividadAprendizajeAA1-1ºEv.csproj",
+      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Services\\AA1.Services.csproj",
+      "projectName": "AA1.Services",
+      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Services\\AA1.Services.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\obj\\",
+      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"

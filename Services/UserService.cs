@@ -1,4 +1,3 @@
-
 namespace Services;
 using Spectre.Console;
 using System.Text.RegularExpressions;
@@ -111,7 +110,7 @@ public class UserService{
 
 
     public static void WriteJsonUser(){
-        string filePath = @".\users.json";
+        string filePath = "Data/users.json";
         var jsonData = new List<Dictionary<string, object>>();
 
         foreach (var userEntry in DictionaryUsers.dictionaryAccounts)
