@@ -38,6 +38,7 @@ COPY --from=publish /app/publish .
 
 COPY Data/*.json /app/Data/
 COPY Utils/*.txt /app/Utils/
+
 COPY README.MD /app
 
 # Configura el puerto de uso del contenedor
