@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Data\\AA1.Data.csproj",
+      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Data\\AA1.Data.csproj",
       "projectName": "AA1.Data",
-      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Data\\AA1.Data.csproj",
+      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Data\\AA1.Data.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Data\\obj\\",
+      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,3 +1,4 @@
+namespace Utils;
 public class Logger{
     public static void SaveLog(string errorMessage)
     {

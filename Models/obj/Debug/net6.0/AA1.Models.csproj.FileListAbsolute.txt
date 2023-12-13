@@ -1,0 +1,15 @@
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\bin\Debug\net6.0\AA1.Models.deps.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\bin\Debug\net6.0\AA1.Models.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\bin\Debug\net6.0\AA1.Models.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\bin\Debug\net6.0\AA1.Data.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\bin\Debug\net6.0\AA1.Data.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.csproj.AssemblyReference.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.AssemblyInfoInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.AssemblyInfo.cs
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.csproj.CoreCompileInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.csproj.CopyComplete
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\refint\AA1.Models.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\AA1.Models.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Models\obj\Debug\net6.0\ref\AA1.Models.dll

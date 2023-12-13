@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TqnSAtVVf4C6bB8zgQsgx5HwazmoL+y8/WGg8BPR40LvLNXh8dov9t46PnR56LwdO4vfR4Uh8ffq98/jzwLjKA==",
+  "dgSpecHash": "0w789xVn7R1aA0Phtw9Oygt7aaeAZ4uk5/h9JhjLUi/s4TgnuRu675hTHpLkj9QloCKajyCabY1U8cog8EUrOw==",
   "success": true,
-  "projectFilePath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj",
+  "projectFilePath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Presentation\\AA1.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\peter\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
     "C:\\Users\\peter\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"

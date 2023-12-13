@@ -1,0 +1,12 @@
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\bin\Debug\net6.0\AA1.Data.deps.json
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\bin\Debug\net6.0\AA1.Data.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\bin\Debug\net6.0\AA1.Data.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.csproj.AssemblyReference.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.AssemblyInfoInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.AssemblyInfo.cs
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.csproj.CoreCompileInputs.cache
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\refint\AA1.Data.dll
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\AA1.Data.pdb
+D:\2ºDAW\Desarrollo Web en Entorno Servidor\AA1\Data\obj\Debug\net6.0\ref\AA1.Data.dll

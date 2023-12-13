@@ -1,19 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Services</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\AA1.Models.csproj" />
+    <ProjectReference Include="..\Services\AA1.Services.csproj" />
+    <ProjectReference Include="..\Utils\AA1.Utils.csproj" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Models\AA1.Models.csproj" />
-    <ProjectReference Include="..\Services\AA1.Services.csproj" />
-  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+     <RootNameSpace>Presentation</RootNameSpace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
 
 </Project>

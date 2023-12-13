@@ -26,6 +26,55 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "AA1.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AA1.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AA1.Data.dll": {}
+        }
+      },
+      "AA1.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AA1.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AA1.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AA1.Models.dll": {}
+        }
+      },
+      "AA1.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AA1.Data": "1.0.0",
+          "AA1.Models": "1.0.0",
+          "AA1.Utils": "1.0.0",
+          "Spectre.Console": "0.48.0"
+        },
+        "compile": {
+          "bin/placeholder/AA1.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AA1.Services.dll": {}
+        }
+      },
+      "AA1.Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AA1.Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AA1.Utils.dll": {}
+        }
       }
     }
   },
@@ -72,10 +121,33 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AA1.Data/1.0.0": {
+      "type": "project",
+      "path": "../Data/AA1.Data.csproj",
+      "msbuildProject": "../Data/AA1.Data.csproj"
+    },
+    "AA1.Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/AA1.Models.csproj",
+      "msbuildProject": "../Models/AA1.Models.csproj"
+    },
+    "AA1.Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/AA1.Services.csproj",
+      "msbuildProject": "../Services/AA1.Services.csproj"
+    },
+    "AA1.Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/AA1.Utils.csproj",
+      "msbuildProject": "../Utils/AA1.Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AA1.Models >= 1.0.0",
+      "AA1.Services >= 1.0.0",
+      "AA1.Utils >= 1.0.0",
       "Spectre.Console >= 0.48.0"
     ]
   },
@@ -85,11 +157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj",
+      "projectUniqueName": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Presentation\\AA1.Presentation.csproj",
       "projectName": "AA1.Presentation",
-      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\AA1.Presentation.csproj",
+      "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Presentation\\AA1.Presentation.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1- Capas\\Presentation\\obj\\",
+      "outputPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -103,7 +175,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Models\\AA1.Models.csproj": {
+              "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Models\\AA1.Models.csproj"
+            },
+            "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Services\\AA1.Services.csproj": {
+              "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Services\\AA1.Services.csproj"
+            },
+            "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Utils\\AA1.Utils.csproj": {
+              "projectPath": "D:\\2ºDAW\\Desarrollo Web en Entorno Servidor\\AA1\\Utils\\AA1.Utils.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

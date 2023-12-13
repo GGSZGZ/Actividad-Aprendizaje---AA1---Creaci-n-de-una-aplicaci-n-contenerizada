@@ -1,0 +1,88 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AA1.Services/1.0.0": {
+        "dependencies": {
+          "AA1.Data": "1.0.0",
+          "AA1.Models": "1.0.0",
+          "AA1.Utils": "1.0.0",
+          "Spectre.Console": "0.48.0"
+        },
+        "runtime": {
+          "AA1.Services.dll": {}
+        }
+      },
+      "Spectre.Console/0.48.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.48.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {},
+      "AA1.Data/1.0.0": {
+        "runtime": {
+          "AA1.Data.dll": {}
+        }
+      },
+      "AA1.Models/1.0.0": {
+        "dependencies": {
+          "AA1.Data": "1.0.0"
+        },
+        "runtime": {
+          "AA1.Models.dll": {}
+        }
+      },
+      "AA1.Utils/1.0.0": {
+        "runtime": {
+          "AA1.Utils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AA1.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Spectre.Console/0.48.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4Mc1UT7Azgtyb8FyNwK5FZmoZbKuT5PmY7ZwaKUytjD5kGFMNBACpOZTwYtkuY377YkYtZYBeDDTJUwTW86QXw==",
+      "path": "spectre.console/0.48.0",
+      "hashPath": "spectre.console.0.48.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
+    },
+    "AA1.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AA1.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AA1.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
