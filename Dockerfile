@@ -21,6 +21,7 @@ RUN dotnet build -c Release -o /app/build
 #Inicia una nueva etapa en la construcción de la imagen, basada en la imagen construida anteriormente (etiquetada como "build").
 FROM build AS publish
 #ejecutar comandos dentro de la ruta, el publish es para publicar la app en .net
+# para crear una versión publicada de la aplicación en el directorio
 RUN dotnet publish -c Release -o /app/publish
 
 #Inicia una nueva etapa en la construcción de la imagen, basada en la imagen oficial de ASP.NET para .NET 6.0.

@@ -147,9 +147,9 @@ public class BookingService{
         }
         else
         {
-            
            AnsiConsole.MarkupLine("[red]Formato de fecha y hora incorrecto.[/]");
            Logger.SaveLog(Logger.GetExceptionMessage());
+           SelectingBooked(optionBooked,user);
         }
     
     bookingList[optionBooked-1].userLogged=user.isLogged();
