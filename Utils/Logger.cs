@@ -1,10 +1,11 @@
 public class Logger{
     public static void SaveLog(string errorMessage)
     {
-         string versionEnv = Environment.GetEnvironmentVariable("PROGRAM_VERSION");
-        if(versionEnv=="" || versionEnv ==null){
-            versionEnv="1.0.0";
-        }
+         string versionEnv = Environment.GetEnvironmentVariable("PROGRAM_VERSION") ?? "Versions unknown";
+        // if(versionEnv=="" || versionEnv ==null){
+        //     versionEnv="1.0.0";
+        // }
+        // versionEnv 
         string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
        

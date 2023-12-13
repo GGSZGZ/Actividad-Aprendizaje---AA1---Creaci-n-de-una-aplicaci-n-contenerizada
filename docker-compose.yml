@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  coffeeroyale:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - app_data:/app/Data
+      - app_utils:/app/Utils
+    ports:
+      - "7315:7315"
+
+volumes:
+  app_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}\Desktop\data
+  app_utils:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}\Desktop\utils
